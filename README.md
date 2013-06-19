@@ -1,18 +1,20 @@
-# LincolnLabs API (in progress)
+# API Partners
 
-## Start the server
+## LincolnLabs API (in progress)
+
+### Start the server
 
     npm install
     node server
 
-## Global options
+### Global options
 
-### Limit (default 10)
+#### Limit (default 10)
 By default the limit is 10 on a call, but you can change that by setting `limit` in the query params:
 
     ?limit=20
 
-### Parameters
+#### Parameters
 All parameters are regular expressions.
 
 For example, if you call all world leaders by name:
@@ -21,15 +23,15 @@ For example, if you call all world leaders by name:
 
 you are able to use the OR assignment and get all results for both.
 
-## /agencies
+### /agencies
 Agencies
 
-### All
+#### All
 To get all agencies:
 
     http://api.lincolnlabs.com/agencies
 
-### Type
+#### Type
 To get an agency by type:
 
     http://api.lincolnlabs.com/type/:type
@@ -45,31 +47,81 @@ Type may be:
 - "Smithsonian"
 - "U.S. Embassy"
 
-## /leaders
+### /leaders
 World Leaders
 
-### All
+#### All
 To get all world leaders:
 
     http://api.lincolnlabs.com/leaders
 
-### Country
+#### Country
 To get all world leaders by country:
 
     http://api.lincolnlabs.com/leaders/country/:country
 
 With `:country` being the country you wish to query.
 
-### Name
+#### Name
 To get all world leaders by name:
 
     http://api.lincolnlabs.com/leaders/name/:name
 
 With `:name` being the name you wish to query.
 
-### Title
+#### Title
 To get all world leaders by title:
 
     http://api.lincolnlabs.com/leaders/title/:title
 
 With `:title` being the title you wish to query.
+
+## Sunlight Foundation
+
+### Overall API Information
+General information on Sunlight's APIs
+    
+    http://sunlightfoundation.com/api/
+
+### Influencer Research
+Understand the influencers in policy making, from their funders to their organization history:
+    
+    http://sunlightlabs.github.io/datacommons/
+    
+### Open States
+Provides data on state legislation activity
+    
+    http://sunlightlabs.github.io/openstates-api/
+
+### NEW! DocketWrench API
+Track comments on federal legislation: 
+
+    http://docketwrench.sunlightfoundation.com/
+    
+## SendHub
+The easiest way to send text messages and make telephony calls
+
+    http://apidocs.sendhub.com/
+
+
+## OpenSecrets
+Understand who contributes to what cause in policy making
+
+    http://www.opensecrets.org/resources/create/api_doc.php
+
+## 3taps
+One of the largest collections of public information:
+
+    https://3taps.com/developers-overview.php
+    
+
+## NationBuilder
+More information soon
+
+## OpenGoverment
+More information soon
+
+## Aristotle 
+More information soon
+
+
